@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <title>Beckham - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Portfolio - Carlos Gouveia</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -37,18 +37,18 @@
     <nav id="colorlib-main-nav" role="navigation">
       <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
       <div class="js-fullheight colorlib-table">
-      	<div class="img" style="background-image: url(images/author-2.jpg);"></div>
+      	<div class="img" style="background-image: url(images/perfil_2.jpg);"></div>
         <div class="colorlib-table-cell js-fullheight">
           <div class="row no-gutters">
             <div class="col-md-12 text-center">
-              <h1 class="mb-4"><a href="index.html" class="logo">Beckham Muff</a></h1>
+              <h1 class="mb-4"><a href="index.html" class="logo">Carlos Gouveia</a></h1>
               <ul>
                 <li><a href="index.html"><span><small>01</small>Home</span></a></li>
-                <li><a href="about.html"><span><small>02</small>Resume</span></a></li>
-                <li><a href="services.html"><span><small>03</small>Services</span></a></li>
-                <li><a href="portfolio.html"><span><small>04</small>Portfolio</span></a></li>
-                <li><a href="blog.html"><span><small>05</small>Blog</span></a></li>
-                <li class="active"><a href="contact.html"><span><small>06</small>Contact</span></a></li>
+                <li><a href="about.html"><span><small>02</small>Currículo</span></a></li>
+                <!-- <li><a href="services.html"><span><small>03</small>Services</span></a></li> -->
+                <li><a href="portfolio.html"><span><small>03</small>Portfólio</span></a></li>
+                <li><a href="blog.html"><span><small>04</small>Blog</span></a></li>
+                <li class="active"><a href="contact.html"><span><small>05</small>Contato</span></a></li>
               </ul>
             </div>
           </div>
@@ -62,7 +62,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="colorlib-navbar-brand">
-                <a class="colorlib-logo" href="index.html"><span class="logo-img" style="background-image: url(images/person_1.jpg);"></span>Beckham Muff</a>
+                <a class="colorlib-logo" href="index.html"><span class="logo-img" style="background-image: url(images/perfil_1.jpg);"></span>Carlos Gouveia</a>
               </div>
               <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
             </div>
@@ -74,44 +74,42 @@
         <div class="container mt-5">
           <div class="row d-flex mb-5 contact-info">
             <div class="col-md-12 mb-4">
-              <h2 class="h4">Contact Information</h2>
+              <h2 class="h4">Informações para Contato</h2>
             </div>
             <div class="w-100"></div>
-            <div class="col-md-3">
-              <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+            <div class="col-md-6">
+              <p><span>Endereço:</span> Itamogi, Minas Gerais - Brasil</p>
             </div>
-            <div class="col-md-3">
-              <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+            <div class="col-md-6">
+              <p><span>Email:</span> <a href="mailto:carlaogouveia_tech@hotmail.com">carlaogouveia_tech@hotmail.com</a></p>
             </div>
-            <div class="col-md-3">
-              <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-            </div>
-            <div class="col-md-3">
-              <p><span>Website:</span> <a href="#">yoursite.com</a></p>
-            </div>
+            
           </div>
           <div class="row block-9">
             <div class="col-md-6 pr-md-5">
-              <form action="#">
+              <form name="formcontato" action="https://formsquash.io/f/MOoebcgZxmQqtFRwE71D" method="POST">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Name">
+                  <input type="text" name="nome" class="form-control" placeholder="Nome">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Email">
+                  <input type="email" name="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Subject">
+                  <input type="text" name="assunto" class="form-control" placeholder="Assunto">
                 </div>
                 <div class="form-group">
-                  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                  <textarea name="mensagem" cols="30" rows="7" class="form-control" placeholder="Menssagem"></textarea>
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                  <input type="submit" value="Enviar" class="btn py-3 px-5" onclick="return validate_form_contato()">
                 </div>
               </form>
             
             </div>
-            <div class="col-md-6" id="map"></div>
+
+            <div class="col-md-6 author-img" style="background-image: url(images/contato.jpg);" alt="Imagem de Maret Hosemann por Pixabay "
+              data-scrollax=" properties: { translateY: '-70%'}"></div>
+            
           </div>
         </div>
       </section>
@@ -122,14 +120,14 @@
             <div class="col-md-5 text-center">
               <div class="ftco-footer-widget mb-5">
                 <ul class="ftco-footer-social list-unstyled">
-                  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.linkedin.com/in/carlos-adriano-gouveia" target="_blank"><span class="icon-linkedin"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.facebook.com/karlos.adriano.98" target="_blank"><span class="icon-facebook"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.instagram.com/karlos.gouveia" target="_blank"><span class="icon-instagram"></span></a></li>
                 </ul>
               </div>
               <div class="ftco-footer-widget">
-                <h2 class="mb-3">Contact Us</h2>
-                <p class="h3 email"><a href="#">info@email.com</a></p>
+                <h2 class="mb-3">Entre em contato</h2>
+                <p class="h3 email"><a href="#">carlaogouveia_tech@hotmail.com</a></p>
               </div>
             </div>
           </div>
@@ -166,8 +164,7 @@
     <script src="js/scrollax.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
+    <script src="js/validacao-form.js"></script>
     <script src="js/main.js"></script>
     
   </body>
