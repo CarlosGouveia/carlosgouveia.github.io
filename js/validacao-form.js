@@ -6,23 +6,27 @@ function validate_form_contato(){
     var mensagem = formcontato.mensagem.value;
 
     if(nome == ""){
-      alert("O campo nome é obrigatório");
+      alert("O campo nome é obrigatório.");
       formcontato.nome.focus();
       return false;
     }
-    if(email == ""){
-      alert("O campo email é obrigatório");
+    else if(email == ""){
+      alert("O campo email é obrigatório. Formato: teste@exemplo.com");
       formcontato.email.focus();
       return false;
     }
-    if(assunto == ""){
+    else if(assunto == ""){
       alert("O campo assunto é obrigatório");
       formcontato.assunto.focus();
       return false;
     }
-    if(mensagem == ""){
+    else if(mensagem == ""){
       alert("O campo mensagem é obrigatório");
       formcontato.mensagem.focus();
       return false;
+    }
+    else{
+      alert("Agradeço pelo contato!!");
+      return true;
     }
   }
